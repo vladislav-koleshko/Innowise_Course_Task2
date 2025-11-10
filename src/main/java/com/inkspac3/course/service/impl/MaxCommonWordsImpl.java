@@ -1,4 +1,6 @@
 package com.inkspac3.course.service.impl;
 
-public class MaxCommonWordsImpl {
+import com.inkspac3.course.service.MaxCommonWordsService;
+
+public class MaxCommonWordsImpl implements MaxCommonWordsService {
 }

@@ -1,4 +1,6 @@
 package com.inkspac3.course.service.impl;
 
-public class LexemeSwitcherImpl {
+import com.inkspac3.course.service.LexemeSwitcher;
+
+public class LexemeSwitcherImpl implements LexemeSwitcher {
 }

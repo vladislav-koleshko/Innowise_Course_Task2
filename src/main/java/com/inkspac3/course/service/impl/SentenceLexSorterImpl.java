@@ -1,4 +1,6 @@
 package com.inkspac3.course.service.impl;
 
-public class SentenceLexSorterImpl {
+import com.inkspac3.course.service.SentenceLexSorter;
+
+public class SentenceLexSorterImpl implements SentenceLexSorter {
 }
