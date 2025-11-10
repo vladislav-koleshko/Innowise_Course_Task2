@@ -14,7 +14,7 @@ public class SentenceParser extends TextParser {
     String[] sentences = paragraph.split(SENTENCE_DELIM);
     for (String sentence : sentences) {
       if (nextParser != null) {
-        TextComponent sentenceComponent = nextParser.parse(sentence.trim());
+        TextComponent sentenceComponent = nextParser.parse(sentence.strip());
         paragraphComposite.add(sentenceComponent);
       }
     }

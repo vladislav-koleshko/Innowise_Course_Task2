@@ -13,7 +13,7 @@ public class ParagraphParser extends TextParser {
     String[] paragraphs = text.split("(\\r?\\n\\s*){2,}");
     for (String paragraph : paragraphs) {
       if (nextParser != null) {
-        TextComponent paragraphComponent = nextParser.parse(paragraph.trim());
+        TextComponent paragraphComponent = nextParser.parse(paragraph.strip());
         textComposite.add(paragraphComponent);
       }
     }
