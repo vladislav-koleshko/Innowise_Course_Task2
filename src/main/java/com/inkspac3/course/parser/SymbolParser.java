@@ -6,7 +6,6 @@ import com.inkspac3.course.component.TextComposite;
 import com.inkspac3.course.component.TextLeaf;
 
 public class SymbolParser extends TextParser {
-
   @Override
   public TextComponent parse(String word) {
     TextComposite wordComposite = new TextComposite(TextComponentType.SYMBOL);

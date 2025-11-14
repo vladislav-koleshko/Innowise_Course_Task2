@@ -9,7 +9,7 @@ import java.nio.file.Paths;
 import java.util.List;
 
 public class TextReader {
-  private static final Logger log = LogManager.getLogger(TextReader.class);
+  private static final Logger log = LogManager.getLogger();
 
   public TextReader() {}
 

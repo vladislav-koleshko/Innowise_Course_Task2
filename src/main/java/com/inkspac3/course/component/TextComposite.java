@@ -1,9 +1,12 @@
 package com.inkspac3.course.component;
 
+import org.apache.logging.log4j.*;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class TextComposite implements TextComponent {
+    private static final Logger log = LogManager.getLogger();
     private final TextComponentType type;
     private final List<TextComponent> components = new ArrayList<>();
 
@@ -13,12 +16,19 @@ public class TextComposite implements TextComponent {
 
     @Override
     public void add(TextComponent component) {
+        log.debug("Adding component " + component);
         components.add(component);
     }
 
     @Override
     public void remove(TextComponent component) {
+        log.debug("Component removed " + component);
         components.remove(component);
+    }
+
+    @Override
+    public List<TextComponent> getComponents() {
+        return components;
     }
 
     @Override
